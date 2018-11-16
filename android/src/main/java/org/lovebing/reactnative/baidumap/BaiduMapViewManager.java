@@ -63,7 +63,7 @@ public class BaiduMapViewManager extends ViewGroupManager<MapView> {
 
     @Override
     public void addView(MapView parent, View child, int index) {
-        if(childrenPoints != null) {
+        if(childrenPoints != null && childrenPoints.size() > 0) {
             Point point = new Point();
             ReadableArray item = childrenPoints.getArray(index);
             if(item != null) {
